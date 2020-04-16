@@ -1,0 +1,16 @@
+galaxy_info:
+  role_name: centos-app-server
+  author: Markus Rainer 
+  company: Red Hat
+
+  license: MIT
+  min_ansible_version: 2.8
+
+  platforms: 
+    - name: CentOS
+      versions: 
+        - 7
+
+  galaxy_tags: [centos, lab, demo, webserver]
+
+dependencies: []
