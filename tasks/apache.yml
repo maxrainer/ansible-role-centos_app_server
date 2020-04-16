@@ -1,0 +1,23 @@
+---
+
+- name: install apache webserver and PHP
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - httpd 
+      - php 
+      - php-common
+  become: yes
+  notify: restart httpd server
+
+- name: webpage template
+  template:
+    src: webpage.html.j2
+    dest: /var/www/html/index.html
+    owner: apache
+    mode: "0644"
+  become: yes
+  notify: restart httpd server
+    
+

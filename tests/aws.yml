@@ -1,0 +1,13 @@
+---
+
+- name: aws test
+  hosts: function_server
+  roles: 
+    - role: ../..
+  vars:
+    demo_hostname: web1 
+    ansible_private_key_file : ~/.ssh/aws-demo.pem
+    ansible_ssh_user: centos
+    ansible_python_interpreter: /usr/bin/python
+
+  
