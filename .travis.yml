@@ -3,13 +3,10 @@ sudo: required
 
 
 env:
-  - distro: centos6
-    init: /sbin/init
-    run_opts: "--privileged"
   - distro: centos7
     init: /usr/lib/systemd/systemd
     run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-  - distro: fedora24
+  - distro: centos8
     init: /usr/lib/systemd/systemd
     run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
 
