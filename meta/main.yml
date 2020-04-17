@@ -1,6 +1,7 @@
 galaxy_info:
   role_name: centos-app-server
   author: Markus Rainer 
+  description: CentOS App Server for Demo and Labs
   company: Red Hat
 
   license: MIT
