@@ -2,5 +2,5 @@
 
 demo_hostname: host
 
-private_ip_address: 10.10.10.10
+private_ip: 10.10.10.10
 centos_private_interface: eth1
