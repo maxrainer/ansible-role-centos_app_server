@@ -1,7 +1,6 @@
 ---
 sudo: required
 
-
 env:
   - distro: centos7
     init: /usr/lib/systemd/systemd

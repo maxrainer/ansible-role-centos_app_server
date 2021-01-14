@@ -1,4 +1,8 @@
 ---
 
+- include_tasks:
+    file: pre-config.yml
+  tags: [preconfig]
+
 - include_tasks: 
     file: apache.yml

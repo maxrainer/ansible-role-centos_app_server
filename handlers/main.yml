@@ -6,3 +6,10 @@
     enabled: yes
     state: restarted
   become: yes
+
+- name: restart network
+  service: 
+    name: network
+    state: restarted
+    enabled: yes
+  become: yes

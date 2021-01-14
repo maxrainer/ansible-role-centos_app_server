@@ -1,0 +1,17 @@
+TYPE="Ethernet"
+PROXY_METHOD="none"
+BROWSER_ONLY="no"
+BOOTPROTO="none"
+DEFROUTE="no"
+IPV4_FAILURE_FATAL="no"
+IPV6INIT="yes"
+IPV6_AUTOCONF="yes"
+IPV6_DEFROUTE="yes"
+IPV6_FAILURE_FATAL="no"
+IPV6_ADDR_GEN_MODE="stable-privacy"
+NAME="{{ centos_private_interface }}"
+UUID="d6e7cdf0-6e65-482f-9557-251284ed4dbe"
+DEVICE="{{ centos_private_interface }}"
+ONBOOT="yes"
+IPADDR={{ private_ip_address }}
+PREFIX=24

@@ -1,0 +1,16 @@
+---
+
+- name: configure private network
+  template:
+    src: ifcfg-ethX.j2
+    dest: "/etc/sysconfig/network-scripts/ifcfg-{{ centos_private_interface }}"
+  become: true
+  notify: restart network
+
+- name: disable firewalld
+  service: 
+    name: firewalld
+    enabled: no
+    state: stopped
+  become: true
+
